@@ -88,7 +88,7 @@ $mailcc=New-Object System.Collections.Generic.List[System.String];
 $mailcc.Add("liuhanxiaolcy@gmail.com");
 $sender = 'insvsc@microsoft.com';
 
-$pageBody=GetEmailContent $logs
+$pageBody=GetEmailContent $link $logs
 $senderPassword=$env:EMAIL_PASSWORD
 $attachments = New-Object System.Collections.Generic.List[System.String];
 foreach($logFile in $logs) {
